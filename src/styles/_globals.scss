@@ -1,0 +1,63 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: $lightDarkBlue;
+}
+
+body {
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: $font-med;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: $veryDarkGray;
+
+}
+
+
+
+
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+//Flexbox
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+//Buttons 
+button, .button {
+    padding: 12px 30px;
+    box-shadow: 0px 0px 4px 0px $darkGray;
+    cursor: pointer;
+    border: 0;
+    background-color: $white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+

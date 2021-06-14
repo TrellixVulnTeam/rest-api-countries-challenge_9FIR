@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    background-color: $white;
+    
+    nav {
+        padding: 30px 70px;
+        border-bottom: 1px solid $veryDarkGray;
+        box-shadow: -1px -2px 4px 0px $darkGray;
+        @include breakpoints-down(small) {
+            padding: 30px 20px;
+        }
+    }
+
+    &__name {
+        font-size: 24px;
+    }
+    
+    &__btn {
+        font-weight: 600;
+        line-height: 0;
+        svg {
+            margin-right: 10px;
+        }
+    }
+}

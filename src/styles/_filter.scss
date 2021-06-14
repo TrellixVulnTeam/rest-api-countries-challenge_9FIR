@@ -1,0 +1,104 @@
+.wrapper {
+    padding: 30px 70px;
+    flex-wrap: wrap;
+
+    @include breakpoints-down(small) {
+        padding: 30px 20px;
+    }
+    
+    .search {
+        @include breakpoints-down(medium) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        position: relative;
+        background-color: $white;
+        border-radius: 6px;
+        width: 480px;
+        height: 55px;
+        box-shadow: 0px 0px 4px 0px $darkGray;
+
+        &__input {
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 75px;
+            border: 0;
+            outline: none;
+        }
+        svg {
+            position: absolute;
+            left: 30px;
+            font-size: 20px;
+            color: $darkGray;
+        }
+    }
+    
+    .filter {
+        position: relative;
+        border-radius: 6px;
+        width: 200px;
+        height: 55px;
+
+        &__select {
+            padding-left: 25px;
+            padding-right: 20px;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: $white;
+            box-shadow: 0px 0px 4px 0px $darkGray;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+
+            span {
+                font-size: 16px;
+            }
+            
+        }
+
+        &__list {
+            position: absolute;
+            top: 110%;
+            left: 0;
+            right: 0;
+            background-color: $white;
+            box-shadow: 0px 0px 4px 0px $darkGray;
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 5px 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s linear, visibility 0.2s linear;
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &-item {
+                padding: 10px 10px;
+                border-radius: 6px;
+            }
+            &-item:hover {
+                background-color: $veryDarkGray;
+
+            }
+        }
+
+        > svg {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translate(0, -50%);
+        }
+
+        
+
+    }
+
+    
+}

@@ -1,0 +1,64 @@
+.dark-theme {
+    background-color: $veryDarkBlue;
+    color: $white;
+    .header {
+        background-color: $darkBlue;
+        color: $white;
+        nav {
+            border-bottom: 1px solid $darkBlue;
+            box-shadow: 0px 0px 1px 0px $darkGray;
+        }
+
+        &__name {
+            color: $white;
+        }
+    }
+
+    .search {
+        background-color: $darkBlue;
+        box-shadow: 0px 0px 1px 0px $darkGray;
+
+        &__input {
+            background-color: $darkBlue;
+            color: $white ;
+            &::placeholder {
+                color: $white ;
+            }
+        }
+        svg {
+            color: $white;
+        }
+
+    }
+
+    .filter {
+        &__select {
+            background-color: $darkBlue;
+            box-shadow: 0px 0px 1px 0px $darkGray;
+        }
+        &__list {
+            background-color: $darkBlue;
+            box-shadow: 0px 0px 1px 0px $darkGray;
+
+            &-item:hover {
+                background-color: $darkGray;
+
+            }
+        }
+    }
+
+    .container {
+        .card {
+            background-color: $darkBlue;
+            box-shadow: 0px 0px 1px 0px $darkGray;
+            color: $white;
+        }
+    }
+
+    button {
+        background-color: $darkBlue;
+        box-shadow: 0px 0px 1px 0px $darkGray;
+        color: $white;
+    }
+
+}
